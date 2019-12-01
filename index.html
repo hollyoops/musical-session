@@ -1,49 +1,154 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Basic music theory</h2>
+          <p>
+            <small>Holly</small>
+          </p>
+        </section>
+        <section>
+          <h2>goal</h2>
+          <ul>
+            <li class="fragment">Notes(音符)</li>
+            <li class="fragment">Play notes</li>
+            <li class="fragment">Staff & Tablature(五线谱 & 六线谱)</li>
+            <li class="fragment">Chords</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Notes</h2>
+          <p>Syllable Name: <span>1 2 3 4 5 6 7</span></p>
+          <p>
+            Pitch Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>C D E F G A B</span>
+          </p>
+        </section>
+        <section>
+          <h2>half step & whole step</h2>
+          <h6>半音 & 全音</h6>
+          <img
+            width="640"
+            height="340"
+            data-src="https://twgreatdaily.com/images/elastic/a0E/a0Eu9GwBJleJMoPMstC_.jpg"
+            alt="steps"
+          />
+        </section>
+        <section>
+          <h2>Keys of piano</h2>
 
-		<script src="js/reveal.js"></script>
+          <ul>
+            <li>Notes</li>
+            <li>Middle-c</li>
+          </ul>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
+          <p>
+            <img
+              data-src="https://pianomusictheory.files.wordpress.com/2016/05/keyboard_middlec2.png?w=855"
+              alt="steps"
+            />
+          </p>
+          <p>
+            <a href="https://www.onlinepianist.com/virtual-piano">
+              virtual-piano
+            </a>
+          </p>
+        </section>
+        <section>
+          <h2>Keys of guitar</h2>
+
+          <ul>
+            <li>Notes</li>
+            <li>frets</li>
+            <li>strings</li>
+          </ul>
+
+          <p>
+            <img
+              data-src="http://guitarconfidence.com/wp-content/uploads/2015/03/guitar-fret-steps.jpg"
+              alt="steps"
+            />
+          </p>
+          <p>
+            <a href="https://musicca.com/guitar?notes=&highlighted=&inverted=">
+              virtual-guitar
+            </a>
+          </p>
+        </section>
+        <section>
+          <h2>Complex notes system</h2>
+          <p>
+            <img
+              data-src="https://www.lessonface.com/sites/default/files/field/image/notes-on-guitar-lato.jpg"
+              alt="steps"
+            />
+          </p>
+        </section>
+        <section>
+          <h2>Staff</h2>
+        </section>
+        <section>
+          <h2>tablature</h2>
+        </section>
+        <section>
+          <h2>Chords</h2>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          {
+            src: "plugin/markdown/marked.js"
+          },
+          {
+            src: "plugin/markdown/markdown.js"
+          },
+          {
+            src: "plugin/notes/notes.js",
+            async: true
+          },
+          {
+            src: "plugin/highlight/highlight.js",
+            async: true
+          }
+        ]
+      });
+    </script>
+  </body>
 </html>
